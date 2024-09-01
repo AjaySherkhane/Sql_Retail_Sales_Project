@@ -48,12 +48,14 @@ SELECT<br />
 	COUNT(transactions_id) as Total_transactions<br />
 FROM retail_sales;<br />
 	
---Find out count of unique transactions customers?
+Find out count of unique transactions customers?<br />
 SELECT<br />
 	COUNT(DISTINCT customer_id)<br />
 FROM retail_sales;<br />
 
-SELECT * FROM retail_sales<br />
+SELECT<br /> 
+*<br /> 
+FROM retail_sales<br />
 WHERE <br />
     sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR <br />
     gender IS NULL OR age IS NULL OR category IS NULL OR <br />
